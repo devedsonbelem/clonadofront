@@ -1,0 +1,97 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Faq</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+	<div id="FAQ_decoration"></div>
+	<div>
+		<div id="FAQ">FAQ</div>
+		<div class="title_box">
+			Perguntas Frequentes
+		</div>
+		<div class="FAQ_list">
+			<div class="FAQ_item" tappable (click)="questionClick('1')">
+				O Fui Clonado recupera o meu número?
+			</div>
+			<div id="item_content1" class="FAQ_content">
+				R: NÃO, apenas ajudamos você a comunicar de forma mais rápida a todos os seus contatos e aos seus amigos
+				do Facebook.
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('2')">
+				O Fui Clonado liga para mim solicitando algum dado ou dinheiro?
+			</div>
+			<div id="item_content2" class="FAQ_content">
+				R: NÃO, somos um grupo de especialista em tecnologia da informação e criamos o Fui Clonado para ajudar
+				os usuários do Whatsapp.
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('3')">
+				Como retiro meu telefone da base de clonados depois que recuperei meu Whatsapp?
+			</div>
+			<div id="item_content3" class="FAQ_content">
+				R: Clicando no link “Verificar” do Menu Superior e no link “recuperei meu número”, você receberá um SMS
+				para validar se o número telefônico é mesmo seu e assim terá seus dados retirados do nosso banco de
+				dados.
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('4')">
+				Quais os passos para informar que eu fui clonado?
+			</div>
+			<div id="item_content4" class="FAQ_content">
+				<ol>
+					<li>Inserir suas informações na página principal do site.</li>
+					<li>Informar código recebido por SMS.</li>
+					<li>Efetuar login com o google para ter acesso a sua lista de contatos.</li>
+					<li>Opção: Compartilhar nas redes socias</li>
+				</ol>
+			</div>
+			<div class="item_bar" ></div>
+
+			<div class="FAQ_item" tappable (click)="questionClick('5')">
+				Os meus contatos do Google Contato eles recebem quantos avisos?
+			</div>
+			<div id="item_content5" class="FAQ_content">
+				R: Disparamos apenas um aviso para cada contato, somente no ato do cadastro, não disparamos nenhuma
+				publicidade ou spam para seus contatos, vale lembrar também que os contatos registrados em seu Cartão
+				SIM. Caso queira migra do cartão SIM para o Google Contatos para depois cadastrar em nossa base segue o
+				passo a passo: Basta estar com sua conta Google ativa em seu Android e seguir os passos abaixo:
+				<ol style="margin-top:10px">
+					<li>Depois de adicionar seu chip (SIM Card) vá até seus Contatos.</li>
+					<li>Abra o menu do app.</li>
+					<li>Opção Importar do cartão SIM.</li>
+					<li>Aparecerá uma tela de “Salvar contatos no” e então você seleciona sua conta Google.</li>
+				</ol>
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('6')">
+				O Fui Clonado pede meu código de verificação do Whatsapp?
+			</div>
+			<div id="item_content6" class="FAQ_content">
+				R: NÃO, em momento algum pedimos nenhum dado do usuário seja por e-mail ou ligação.
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('7')">
+				O número que consultei não consta na base de fui clonado, significa que ele não foi clonado?
+			</div>
+			<div id="item_content7" class="FAQ_content">
+				R: NÃO, ele pode ter sido clonado, porém ainda não deu tempo do responsável real pelo número cadastrar
+				em nossa base.
+			</div>
+			<div class="item_bar"></div>
+			<div class="FAQ_item" tappable (click)="questionClick('8',true)">
+				O Fui Clonado pede autorização a galeria de fotos do meu celular?
+			</div>
+			<div id="item_content8" class="FAQ_content">
+				R: NÃO, em momento algum solicitamos acesso a galeria de fotos do seu celular.
+			</div>
+			<div class="item_bar" id="bar8"></div>
+		</div>
+	</div>
+</ion-content>

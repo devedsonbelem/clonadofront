@@ -1,0 +1,22 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Recuperar Número</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+	<div style="width: 100%;">
+		<div id="texto_verifique">RECUPEREI MEU NÚMERO</div>
+	</div>
+	<div id="input_box">
+		<h3 style="color:white; text-align:center">Informe seu número abaixo</h3>
+		<input [(ngModel)]="telefone.numero" id="input_verificar" placeholder="(**)99999-9999"  />
+	</div>
+	<div style="width: 100%;">
+		<button class="button_verificar" (click)="recuperar()">ENVIAR</button>
+	</div>
+</ion-content>

@@ -1,0 +1,48 @@
+app-bottom-menu{
+	z-index: 999;
+	width: 100%;
+}
+ion-img{
+	height: 150px;
+	width: 150px;
+	margin-left: 60px;
+	display: block;
+}
+ion-item{
+	margin-top: 10px;
+}
+ion-thumbnail{
+	height: 150px;
+}
+.button_alterar{
+    background: transparent linear-gradient(45deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+	color: white;
+    font-size: 1em;
+	font-weight: 800;
+	padding:10px 70px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top:1%;
+    mix-blend-mode: multiply;
+    border-radius: 5px;
+}
+
+.button_novotel{
+    background: transparent linear-gradient(45deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+	color: white;
+    font-size: 1em;
+	font-weight: 800;
+	padding:10px 70px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top:3%;
+    mix-blend-mode: multiply;
+    border-radius: 5px;
+}
+a{
+	text-decoration: underline !important;
+	font-size: 15px;
+	text-align: center !important;
+}

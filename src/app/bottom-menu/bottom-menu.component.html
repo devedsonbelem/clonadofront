@@ -1,0 +1,34 @@
+<ion-tabs (ionTabsDidChange)="onChange($event)">
+  <ion-tab-bar slot="bottom" #tabs >
+    <ion-tab-button tab="home">
+      <img *ngIf="selected=='home'" src="../../assets/icon/menu/clonado_selected.png"/>
+     <img *ngIf="selected!='home'" src="../../assets/icon/menu/clonado.png"/>
+      <ion-label>Fui Clonado</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="verificar-numero">
+      <img *ngIf="selected!='verificar-numero'" src="../../assets/icon/menu/verificar.png"/>
+      <img *ngIf="selected=='verificar-numero'" src="../../assets/icon/menu/verificar_selected.png"/>
+      <ion-label>Verificar</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="faq">
+      <img *ngIf="selected!='faq'" src="../../assets/icon/menu/faq.png"/>
+      <img *ngIf="selected=='faq'" src="../../assets/icon/menu/faq_selected.png"/>
+      <ion-label>FAQ</ion-label>
+    </ion-tab-button>
+
+   <!-- <ion-tab-button tab="login">
+      <img *ngIf="selected!='login'" src="../../assets/icon/menu/login.png"/>
+      <img *ngIf="selected=='login'" src="../../assets/icon/menu/login_selected.png"/>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>  -->
+
+    <ion-tab-button (click)="sair()">
+      <img *ngIf="selected!='sair'" src="../../assets/icon/menu/sair.png"/>
+      <img *ngIf="selected=='sair'" src="../../assets/icon/menu/sair_selected.png"/>
+      <ion-label>Sair</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>

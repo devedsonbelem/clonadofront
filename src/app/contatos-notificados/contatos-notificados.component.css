@@ -1,0 +1,291 @@
+.notificar-contatos-container {
+    padding-right: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: opx;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.notificar-contatos-card {
+    margin-top: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 0px 20px #00000033;
+    color: #3C5768;
+   font-size: 12px;
+   padding: 0px 0px 0px 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+ion-card{
+	margin-top: 30px;
+	background-color: rgba(235, 235, 235, 0.521);
+}
+ion-card-content{
+	font-size: 14px;
+}
+
+
+
+
+.card-status-message {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 0px 0px 0px 0px;
+   
+}
+.BOonline{
+    color: white;
+    align-items: center;
+}
+
+.btn-BO{
+    background-color: #05C0A3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-align: center;
+   
+}
+
+.alert{
+
+    font-size: 20px;
+    text-align: left;
+    background-color:#3C5768;
+    color: #FFF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.card-default-margin {
+    margin-top: 10px;
+    margin-left: 0px;
+    
+}
+
+.card-div-control {
+    text-align: center;
+}
+
+.success-msg {
+    color: #45af8b;
+}
+
+.error-msg {
+    color: #de4260;
+}
+
+.card-icon {
+    position: absolute;
+    margin-top: 20px;
+    width: 150px;
+    z-index: 10;
+}
+
+.card-body-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-container-links {
+    margin-top: 80px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.span-links {
+    font-size: 2em;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.div-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width:800px;
+    height: 80px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    border-radius: 64px;
+    opacity: 1;
+}
+
+.link-icon {
+    height: 60px;
+    width:60px;
+    cursor: pointer;
+}
+
+.ajustar-padding{
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+a.btn {border-radius: .25rem; border: 1px solid transparent; padding: .5rem 1rem; color: #fff; }
+a.btn:hover { border-radius: .25rem; }
+
+
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.div-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-contato {
+    font-size: 1em;
+    font-weight: 400;
+    color: #3C5768;
+}
+
+.span-contato-text {
+    font-size: 1em;
+    font-weight: 300;
+    color: #3C5768;
+}
+
+.div-faq-text {
+    font-size: 2em!important;
+    color: #3C5768!important;
+}
+
+.form-text-box {
+    width: 390px;
+    height: 50px;
+}
+
+.btn-success {
+    height:48px;
+    background-color:#05C0A3;
+}
+
+.div-contato-text-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-email-contato{
+    padding-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-contato-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.div-contato-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.span-email-text {
+    font-size: 1.5em;
+    color: #3C5768;
+}
+
+.span-inscreva {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.btn-inscreva {
+    width: 200px;
+    height: 60px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    
+}
+
+.div-rodape {
+    margin-top: 100px;
+    background: #3C5768 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.div-logo-branco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-branco {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.span-enviar {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.btn-notificar {
+    width: 175px;
+    height: 60px;
+    margin-top: 10px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+}
+.btn-compartilhar-modal {
+    background-color: #4064ac;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.div-btn-compartilhar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.compartilhar-icon {
+    width: 25px;
+    height: 25px;
+}
+.span-compartilhar {
+    margin-left: 3px;
+}
+
+.my-custom-class {
+    --background: rgb(3, 3, 3);
+    --spinner-color: #fff;
+  
+    color: #fff;
+  }
+
+  /* DOES NOT WORK - not specific enough */
+ion-loading {
+    color: green;
+  }
+  
+  /* Works - pass "my-custom-class" in cssClass to increase specificity */
+  .my-custom-class {
+    color: green;
+  }

@@ -1,0 +1,27 @@
+.msg {
+    margin-top: 40px;
+    color: #45af8b;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.card-div-control {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.span-enviar{
+    color: #ffffff;
+}
+
+.btn-notificar {
+    height: 40px;
+    margin-top: 10px;
+    background: transparent linear-gradient(90deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.2em;
+    font-weight: 800;
+}

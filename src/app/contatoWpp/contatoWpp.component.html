@@ -1,0 +1,79 @@
+<ion-content>
+        <ion-spinner *ngIf="isValid==0" class="spinnerCenter" name="crescent"></ion-spinner>
+
+    <div *ngIf="isValid==1" class="notificar-contatos-container col-12">
+        <img class="card-icon" src="./assets/img/icon/SuccessIcon2.png">
+        <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
+            <div class="card-body">
+                <div class="card-body-container">
+                    <div class="card-status-message success-msg"><strong>Autorização realizada com sucesso!</strong></div>
+                    <div class="alert alert-info card-default-margin">
+                        <strong>Nota!</strong> Seus contatos da Google estão sendo notificados!
+                    </div>
+                    <div class="div-btn-compartilhar">
+                        <button type="button" class="btn btn-default btn-compartilhar-modal" (click)="openShareDialog()">
+                            <img class="compartilhar-icon" src="./assets/img/icon/FacebookIcon.png">
+                            <span class="span-compartilhar ">COMPARTILHAR</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isValid==-1" class="notificar-contatos-container col-12">
+        <img class="card-icon" src="./assets/img/icon/ErrorIcon.png">
+        <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
+            <div class="card-body">
+                <div class="card-body-container">
+                    <div class="card-status-message error-msg"><strong>Erro ao realizar cadastro!</strong></div>
+                    <div class="alert alert-info card-default-margin">
+                        <strong>Nota!</strong> Por favor entre em contato com o administrador.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-xs-12 col-sm-12" *ngIf="isValid!=0">
+        <div class="col-12 div-container-links">
+            <div class="col-md-8 col-xs-12 col-sm-12 div-links">
+                <img class="link-icon" src="./assets/img/icon/FacebookIcon.png">
+                <img class="link-icon" src="./assets/img/icon/InstagramIcon.png">
+                <img class="link-icon" src="./assets/img/icon/TelIcon.png">
+                <img class="link-icon" src="./assets/img/icon/MailIcon.png">
+                <img class="link-icon" src="./assets/img/icon/WhatsAppIcon.png">
+            </div>
+        </div>
+    
+    </div>
+    <div class="col-12 container-contato" *ngIf="isValid!=0">
+        <div class="col-12 div-contato2">
+            <div class="col-12 div-contato-text">
+                <div class="col-12 div-contato-text-container">
+                    <div class="col-12">
+                        <span class="span-contato">ENTRE EM CONTATO</span>
+                    </div>
+                </div>
+                <div class="col-12 div-contato-text-container">
+                    <div class="col-md-8 col-xs-10 col-sm-8 div-faq-text">
+                        <span>Envie abaixo seu e-mail e entraremos em contato.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 div-contato-action">
+                <div class="row col-md-6 col-xs-6 col-sm-8 form-email-contato">
+                    <input type="text" class="form-control form-text-box" placeholder="Insira o email">
+                    <button type="button" class="btn btn-success">
+                        <b>ENVIAR EMAIL</b>
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-12 div-rodape"  *ngIf="isValid!=0">
+        <div class="col-12 div-logo-branco">
+            <img class="logo-branco" src="./assets/img/logo/LogoFuiClonadoBranco.png">
+        </div>
+    </div>
+    
+</ion-content>

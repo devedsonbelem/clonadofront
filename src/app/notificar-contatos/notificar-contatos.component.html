@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Notificar Contatos</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<div style="width: 100%;height: 100%;">
+    <div class="notificar-contatos-container col-12">
+        <img class="card-icon" src="./assets/img/icon/SuccessIcon2.png">
+        <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
+            <div class="card-body">
+                <div class="card-body-container">
+                    <div class="card-status-message success-msg"><strong>Cadastro realizado com sucesso!</strong></div>
+                    <div class="alert alert-info card-default-margin">
+                        <strong>Nota!</strong> Para notificar seus contatos de que seu número foi clonado, é necessário realizar permitir o aplicativo a acessar seus contatos.
+                    </div>
+                    <div class="card-default-margin card-div-control" >
+                        <button type="button" class="btn btn-default btn-inscrever btn-notificar">
+                           
+
+
+                            <span class="span-enviar" [class.spinner]="loading" [disabled]="loading" (click)="obterContatos2() ">NOTIFICAR</span>
+
+                           
+                            
+        
+                   
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

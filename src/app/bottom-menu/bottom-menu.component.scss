@@ -1,0 +1,29 @@
+ion-tabs{
+	width: 100%;
+	
+}
+
+
+ion-tab-bar {
+	height: 12vh;
+	 border: none;
+}
+ion-tab-bar,ion-tab-button{
+	background-color: rgba(242,242,242);
+
+
+}
+ion-tab-button img{
+	width: 75%;
+}
+ion-tab-button {
+	width: 30%;
+	white-space: nowrap;
+	
+}
+ion-label{
+	font-size: 11px;
+	font-weight: 600;
+	color:grey;
+
+}

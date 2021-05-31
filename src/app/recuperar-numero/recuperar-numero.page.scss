@@ -1,0 +1,45 @@
+ion-content{
+	--background: #fff url('../../assets/img/bg/2.jpg') no-repeat center center / cover;
+  }
+  #texto_verifique{
+	  color:white;
+	  font-weight: 800;
+	  font-size: 1.5em;
+	  text-align: center;
+	  margin:auto;
+	  margin-top:30%;
+  } 
+  #input_box{
+	  width: 100%;
+	  margin-top:10%;
+  }
+  #input_verificar{
+	  height: 2.5em;
+	  width: 80%;
+	  display: block;
+	  margin:auto;
+	  text-align: center;
+	  font-weight: bold;
+	  font-size: 1.5em;
+	  border-radius: 10px;
+  }
+  .button_verificar{
+    background: transparent linear-gradient(45deg, #05C0A3 0%, #6EF1A1 100%) 0% 0% no-repeat padding-box;
+	color: white;
+    font-size: 1.5em;
+	font-weight: 800;
+	padding:10px 50px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top:10%;
+    mix-blend-mode: multiply;
+    border-radius: 5px;
+}
+#recuperei{
+	color:white;
+	text-align: center;
+	font-style: italic;
+	margin-top:5%;
+	font-size:1.25em;
+}

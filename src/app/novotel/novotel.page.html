@@ -1,0 +1,38 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Alteração de Dados</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content style="padding: 5px;">
+
+	<h1>Cadastre seu novo número de telefone</h1>
+
+	<div class="login_form">
+
+		<ion-card>
+			<ion-card-content>
+				Digite o número que deseja adicionar
+			</ion-card-content>
+		</ion-card>
+
+		
+		<input  placeholder="Número de telefone" name='numero' [(ngModel)]="telefone.numero"
+	 />
+
+		<!-- <ion-item lines='none'>
+			<ion-label position="fixed">Email: </ion-label>
+			<ion-input name='email' [(ngModel)]="usuario.email" placeholder={{email}}>
+			</ion-input>
+		</ion-item> -->
+
+		<div style="margin-top: 15px;">
+			<button class="button_verificar" (click)="cadastrarnum()">Cadastrar</button>
+		</div>
+	</div>
+
+</ion-content>

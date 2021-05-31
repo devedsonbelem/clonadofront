@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Notificar Contatos</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<div style="width: 100%;height: 100%;">
+    <div class="notificar-contatos-container col-12">
+        <img class="card-icon" src="./assets/img/icon/SuccessIcon2.png">
+        <div class="col-10 col-md-4 col-xs-4 col-sm-4 card notificar-contatos-card">
+            <div class="card-body">
+                <div class="card-body-container">
+                    <div class="card-status-message success-msg"><strong>Contatos notificados com sucesso!</strong></div>
+                 
+                </div>
+                
+            </div>
+
+
+
+            
+<!-- <br/>
+<button (click)="startTimer();">Loading</button>
+<h2>{{timeLeft}}</h2>
+<br/><br/>
+<div id="imagem1" *ngIf="enable"> 
+  <img src="assets/Gif-Fui-Clonado.gif" style="width:200px;height:200px" />
+  </div>
+<button (click)="pauseTimer();">Pause</button>
+<button (click)="zerarTimer();">Zerar</button> -->
+  
+
+
+
+            <div class="div-btn-compartilhar">
+                <button type="button" class="btn btn-default btn-compartilhar-modal"  (click)="openShareDialog()">
+                    <img class="compartilhar-icon" src="./assets/img/icon/FacebookIcon.png">
+                    <span class="span-compartilhar "> COMPARTILHAR</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+     <ion-card style="text-align: center; font-size: 25px;color: #05C0A3;"><strong> Boletim de Ocorrência</strong>
+		<ion-card-content style="text-align: center; font-size: 16px; color: slategrey;">
+			Caso queira, o FUI CLONADO te ajuda a fazer o seu boletim de ocorrência online!
+            <button type="button" class="btn btn-BO"  routerLink='/boletim' style="margin-left: auto; margin-right: auto;display: block;margin-top: 5px;">
+                <span class="span-BOonline " > Clique Aqui</span>
+                </button> 
+        </ion-card-content>
+	</ion-card>
+    
+</div>

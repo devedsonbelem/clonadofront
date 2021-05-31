@@ -1,0 +1,22 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot='end'>
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Verificar Número</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+	<div style="width: 100%;">
+		<div id="texto_verifique">VERIFIQUE SE O NÚMERO QUE VOCÊ BUSCA FOI OU ESTÁ CLONADO</div>
+	</div>
+	<div id="input_box">
+		<input [(ngModel)]="telefone.numero" id="input_verificar" placeholder="(**) 99999-9999"  />
+	</div>
+	<div style="width: 100%;">
+		<button class="button_verificar" (click)="verificar()">Verificar</button>
+		<div id="recuperei" tappablw (click)="navigate('recuperar-numero')"> >Recuperei meu número</div>
+	</div>
+</ion-content>
