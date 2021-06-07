@@ -44,10 +44,6 @@ export class LoginPage implements OnInit {
 	}
 	
 
-	
-	
-		
-		
 	ngOnInit() {
 		if (localStorage.getItem('email')){
 			this.navigate("home");
@@ -57,7 +53,6 @@ export class LoginPage implements OnInit {
 			  tabs[key].style.display = 'none';
 			});
 		}
-		
 	}
 
 
