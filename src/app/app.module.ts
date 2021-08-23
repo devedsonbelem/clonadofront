@@ -1,3 +1,4 @@
+import { SmsRetriever } from '@ionic-native/sms-retriever/ngx';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -19,7 +20,13 @@ import { Contacts } from '@ionic-native/contacts/ngx';
   entryComponents: [BottomMenuComponent],
   imports: [BrowserModule,FormsModule, IonicModule.forRoot(), AppRoutingModule,
     HttpClientModule,BottomMenuModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, SMS,AndroidPermissions,Contacts],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, 
+    SMS,
+    AndroidPermissions,
+    Contacts,
+    SmsRetriever
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

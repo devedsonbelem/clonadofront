@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 import { Telefone } from '../model/telefone';
 import { Sms } from '../model/sms';
 import { DtoUsuario } from '../model/dtousuario';
+import { SmsRetriever } from '@ionic-native/sms-retriever';
 
 // const baseURL = 		"http://fuiclonado.com.br:4618/api/gravar";
 // const URLTEL = 			"http://fuiclonado.com.br:4618/telefones/salvaralterarclonado";
@@ -14,15 +15,26 @@ import { DtoUsuario } from '../model/dtousuario';
 // const URLSMS = 			'http://fuiclonado.com.br:4618/message/sends?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
 // const URLSMSVARIOS = 	'http://fuiclonado.com.br:4618/message/sendsNome?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
 
-const baseURL = 		"http://207.244.229.206:4618/api/gravar";
-const NOVOTELURL = 		"http://207.244.229.206:4618/api/cadastrar/novo";
-const baseLogin = 		"http://207.244.229.206:4618/api/logar/login";
-const URLTEL = 			"http://207.244.229.206:4618/telefones/salvaralterarclonado";
-const URLVERIFICAR = 	"http://207.244.229.206:4618/telefones/verificar";
-const URLRECUPEREI = 	"http://207.244.229.206:4618/telefones/recuperei";
-const URLALTERAR = 		"http://207.244.229.206:4618/api/alterar?email";
-const URLSMS = 			'http://207.244.229.206:4618/message/sends?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
-const URLSMSVARIOS = 	'http://207.244.229.206:4618/message/sendsNome?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
+// const baseURL = 		"http://207.244.229.206:4618/api/gravar";
+// const NOVOTELURL = 		"http://207.244.229.206:4618/api/cadastrar/novo";
+// const baseLogin = 		"http://207.244.229.206:4618/telefones/logar/numero";
+// const URLTEL = 			"http://207.244.229.206:4618/telefones/salvaralterarclonado";
+// const URLVERIFICAR = 	"http://207.244.229.206:4618/telefones/verificar";
+// const URLRECUPEREI = 	"http://207.244.229.206:4618/telefones/recuperei";
+// const URLALTERAR = 		"http://207.244.229.206:4618/api/alterar?email";
+// const URLSMS = 			'http://207.244.229.206:4618/message/sends?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
+// const URLSMSVARIOS = 	'http://207.244.229.206:4618/message/sendsNome?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
+
+const baseURL = 		"http://foiclonado.com.br:4617/api/gravar";
+const NOVOTELURL = 		"http://foiclonado.com.br:4617/api/cadastrar/novo";
+const baseLogin = 		"http://foiclonado.com.br:4617/telefones/logar/numero";
+const URLTEL = 			"http://foiclonado.com.br:4617/telefones/salvaralterarclonado";
+const URLVERIFICAR = 	"http://foiclonado.com.br:4617/telefones/verificar";
+const URLRECUPEREI = 	"http://foiclonado.com.br:4617/telefones/recuperei";
+const URLALTERAR = 		"http://foiclonado.com.br:4617/api/alterar?email";
+const URLSMS = 			'http://foiclonado.com.br:4617/message/sends?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
+const URLSMSVARIOS = 	'http://foiclonado.com.br:4617/message/sendsNome?Authorization=Basic QUNlMTIxZDA4YjY5MDRlMWE3OGMwOWJiZWQ5MDBkNzBlNjphM2VhZjllMjRmZDVmZjQ4Y2Y4ZjJlY2VhMGViYjFiZg==&to';
+
 
 
 @Injectable({
@@ -47,13 +59,17 @@ export class UsuarioService {
 	constructor(private http: HttpClient,
 		public localStorage: LocalStorageService) {
 		this.corsHeaders = new HttpHeaders({
-			'Access-Control-Allow-Headers': 'Content-Type',
+			'Access-Control-Allow-Headers':  'Authorization, Content-Type, Accept',
 			'Content-Type': 'application/json',
 			'Accept': 'application/json',
-			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
-			'Access-Control-Allow-Origin': '*'
+			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+			'Access-Control-Allow-Origin': '*',
+			'Access-Control-Allow-Credentials' : 'true'
 		});
 	}
+
+
+	
 
 	public gravarStorage(usuario: Usuario): string {
 		this.localStorage.set("ITEM", JSON.stringify(usuario));

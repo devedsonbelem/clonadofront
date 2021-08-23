@@ -35,9 +35,6 @@ export class LoginPage implements OnInit {
 		public alertController: AlertController,
 		private router: Router,
 		public localStorage: LocalStorageService,
-
-		
-		
 	) {
 		this.usuario = new Usuario();
 		this.usuario.telefones[0] = new Telefone();
